@@ -1,0 +1,40 @@
+{
+  "case_id": "case_001",
+  "title": "Conveyor Will Not Start",
+  "work_order": "Operator reports that the conveyor will not start when the start button is pressed.",
+  "components": [
+    {
+      "id": "start_button",
+      "name": "Start Button",
+      "actions": {
+        "inspect": "The start button is not physically damaged.",
+        "test": "The start button sends a signal when pressed."
+      }
+    },
+    {
+      "id": "motor",
+      "name": "Motor",
+      "actions": {
+        "inspect": "The motor appears normal.",
+        "test": "The motor does not receive power when start is pressed."
+      }
+    },
+    {
+      "id": "fuse",
+      "name": "Control Fuse",
+      "actions": {
+        "inspect": "The fuse looks dark through the glass.",
+        "test": "The fuse is open and has no continuity."
+      }
+    }
+  ],
+  "answers": [
+    "Bad start button",
+    "Failed motor",
+    "Blown control fuse",
+    "Bad conveyor belt"
+  ],
+  "correct_answer": "Blown control fuse",
+  "success_message": "Correct. The control fuse is blown, preventing the motor control circuit from powering the conveyor.",
+  "failure_message": "Incorrect. Review the evidence and try again."
+}
